@@ -1,0 +1,20 @@
+apiVersion: skaffold/v4beta2
+kind: Config
+metadata:
+  name: mlflow-gcp-cloudrun
+build:
+  artifacts:
+  - image: us-central1-docker.pkg.dev/gcp-prj-id-123/mlflow-gcp/mlflow-gcp
+    docker:
+      dockerfile: Dockerfile
+    platforms:
+      - "linux/amd64"
+profiles:
+- name: production
+  manifests:
+    rawYaml:
+    - deploy/production/service.yaml
+deploy:
+  cloudrun:
+    projectid: gcp-prj-id-123
+    region: us-central1
