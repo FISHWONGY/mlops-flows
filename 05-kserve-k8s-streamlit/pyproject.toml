@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "kserve-k8s-streamlit"
+version = "0.1.0"
+description = ""
+authors = [""]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+
+requests = "^2.31.0"
+pandas = "2.2.2"
+streamlit = "^1.12.0"
+altair = "^4.0"
+plotly = "^5.16.1"
+
+kfp = "2.4.0"
+kserve = "0.13.0"
+
+pydantic-settings = "^2.2.1"
+
+google-cloud-secret-manager = "^2.16.3"
+google-cloud-logging = "^3.8.0"
+google-cloud-storage = "^2.10.0"
+
+fastapi = "^0.109.1"
+
+[build-system]
+requires = ["poetry-core>=1.4.1"]
+build-backend = "poetry.core.masonry.api"

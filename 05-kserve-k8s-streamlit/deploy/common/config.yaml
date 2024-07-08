@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kserve-k8s-streamlit-config
+data:
+  GCP_PROJECT_ID: "gcp-prj-id-123"
+  ENV: "prod"

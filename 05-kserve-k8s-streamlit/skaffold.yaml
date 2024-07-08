@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: kserve-k8s-streamlit-app
+build:
+  artifacts:
+  - image: us-central1-docker.pkg.dev/gcp-prj-id-123/mlflow-gcp/kserve-k8s-streamlit-app
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubeContext: gke_gcp-prj-id-123_us-central1-c_kubeflow
+  kustomize:
+    paths:
+    - deploy/common
+profiles:
+- name: production
+  deploy:
+    kustomize:
+      paths:
+      - deploy/production

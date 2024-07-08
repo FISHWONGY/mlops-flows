@@ -1,0 +1,6 @@
+namespace: your-namespace
+resources:
+  - deployment.yaml
+  - config.yaml
+  - serviceaccount.yaml
+  - service.yaml
