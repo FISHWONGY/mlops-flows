@@ -117,7 +117,7 @@ kubectl create secret docker-registry gar-json-key \
   --docker-email=user@email.com
 ```
 
-Reference the secret in the `deplyment.yaml` file as shown below:
+Reference the secret in the `deployment.yaml` file as shown below:
 ```yaml
 spec:
   serviceAccountName: default-editor
