@@ -61,6 +61,7 @@ For detailed instructions on deploying and using each component, refer to the in
 - [mlflow-wine-pred-endpoint README](02-mlflow-wine-pred-endpoint/README.md)
 - [mlflow-wine-streamlit README](03-mlflow-wine-streamlit/README.md)
 - [vertexai-ep-streamlit README](04-vertexai-ep-streamlit/README.md)
+- [kserve-k8s-streamlit README](05-kserve-k8s-streamlit/README.md)
 
 ## 📋 Prerequisites
 
