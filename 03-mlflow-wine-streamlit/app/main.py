@@ -154,7 +154,7 @@ def run():
 
         if st.button("Predict"):
             response = requests.post(
-                f"{app_config.MLFLOW_TRACKING_URI}/invocations",
+                f"{app_config.MLFLOW_ENDPOINT}/invocations",
                 json=data,
                 headers={
                     "Content-Type": "application/json",
