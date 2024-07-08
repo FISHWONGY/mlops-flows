@@ -3,7 +3,13 @@
 `mlops-flows` is a comprehensive suite of examples demonstrating the deployment of machine learning (ML) workflows on Google Cloud Platform (GCP). It covers the deployment of an MLflow server, the use of FastAPI for serving ML predictions, the creation of interactive web applications with Streamlit, and the integration of Vertex AI for model serving. Each component is designed to be scalable and secure, leveraging the power of GCP's Cloud Run service.
 
 ## Overview
+
+Architecutre option 1
 ![mlops-flows](https://github.com/FISHWONGY/mlops-flows/assets/59711659/80f7a6ed-10dd-4dd9-b80b-222492cfbf81)
+
+Architecutre option 2
+![kserve-flow](https://github.com/FISHWONGY/mlops-flows/assets/59711659/50994594-2b58-40fe-b37c-061693174e10)
+
 
 
 ## Table of Contents
