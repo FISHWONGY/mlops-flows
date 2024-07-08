@@ -114,7 +114,16 @@ cd 04-vertexai-ep-streamlit
 # Follow the specific instructions in the component's README to deploy to Cloud Run
 ```
 
-Remember, each component may have its own set of environment variables, configurations, and deployment commands that need to be executed. The README files within each directory will provide the exact steps to get each service up and running.
+### 05-kserve-k8s-streamlit
+
+To deploy the Streamlit web application using KServe endpoints on Kubernetes:
+
+```bash
+cd 05-kserve-k8s-streamlit
+# Follow the specific instructions in the component's README to deploy to Cloud Run
+```
+
+Each component may have its own set of environment variables, configurations, and deployment commands that need to be executed. The README files within each directory will provide the exact steps to get each service up and running.
 
 For any common operations or commands that apply to all components, such as starting a local development server or running tests, you can include those instructions here as well.
 
